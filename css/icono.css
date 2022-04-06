@@ -1,0 +1,9 @@
+html,body{
+    margin: 0%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+.icono{
+    margin-left: 100%;
+    width: 80px;
+   }

@@ -5,19 +5,20 @@ html,body{
 }
 
 img{
-    max-height:600px;   
+    max-height:450px;   
     width: 100%;
     object-fit:cover;
    }
+
 .img_active{
     width: 100%;
 }
 
 
 .titulo{
-    color: rgb(104, 101, 143);
+    color: rgb(255, 255, 255);
     position: absolute;
-    top: -350px;
+    top: -250px;
     left: 110px;
     font-size: 70px;
 }

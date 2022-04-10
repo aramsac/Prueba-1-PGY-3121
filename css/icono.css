@@ -4,6 +4,17 @@ html,body{
     background-color: rgb(240, 240, 240);
 }
 .icono{
-    margin-left: 100%;
+    margin-left: 60%;
     width: 80px;
    }
+
+.nombreNegocio{
+    top: 10%;
+    left: 20%;
+}
+@media screen and (max-width:600px){
+    .icono{
+        margin-left: 0%;
+        width: 50px;
+       }
+}

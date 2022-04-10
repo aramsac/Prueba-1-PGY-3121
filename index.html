@@ -24,22 +24,29 @@
   <!--
   <iframe class="barraNavegacion" src="barraNavegacion.html"></iframe>
 -->
- 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
               <img class="icono" src="imagenes\icono.png">
           </a>
+          <h1 class="nombreNegocio">Panaderia Doña Carmelita</h1span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-center" >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#productos">Nuestros productos</a>
+                <a class="nav-link" href="index.html#productos">Nuestros productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="formulario.html">
+                  <button class="btn btn-primary">Realizar Pedido</button>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
@@ -49,7 +56,7 @@
           </div>
         </div>
       </nav>
-   
+ </header>
 
 
     <!-- carrusel de imagens -->
@@ -106,34 +113,14 @@
 
 
 
-<!-- Carousel wrapper -->
+
 
   <!-- Controls -->
  <section id="productos">
-  <div class="d-flex justify-content-center mb-4">
-    <button
-      class="carousel-control-prev position-relative"
-      type="button"
-      data-mdb-target="#carouselMultiItemExample"
-      data-mdb-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next position-relative"
-      type="button"
-      data-mdb-target="#carouselMultiItemExample"
-      data-mdb-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
+  
+    
     <!-- Single item -->
-    <div class="carousel-item active">
+ 
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -191,10 +178,10 @@
           </div>
         </div>
       </div>
-    </div>
+    
 
     <!-- Single item -->
-    <div class="carousel-item">
+ 
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-12">
@@ -251,11 +238,11 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </div>  
+    
 
     <!-- Single item -->
-    <div class="carousel-item">
+    
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -314,7 +301,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
   <!-- Inner -->
 </div>
 <!-- Carousel wrapper -->
@@ -325,9 +312,9 @@
 
 
 
-        <footer class="footer">
+<footer class="bg-light text-lg-start">
             skdjkjsdfh
-        </footer>
+</footer>
 
        
 

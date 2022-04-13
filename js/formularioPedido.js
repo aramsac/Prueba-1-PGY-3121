@@ -27,6 +27,6 @@ let datosPedido   = {
                         cvv            : document.getElementById('cvv').value
                     }
 
-   console.log( document.getElementsByName('metodoDePago')[0])   
+   console.log(datosPedido)   
 }
 

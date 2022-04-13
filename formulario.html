@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Panaderia Doña Carmelita</title>
-
+ 
     <!-- hoja de estilo para icono de la barrra de navegacion -->
-    <link rel="stylesheet" href="./css/icono.css">
+    <link rel="stylesheet" href="./css/iconoFormulario.css">
     <link rel="stylesheet" href="./css/barra.css">
     
-    
-    <!-- hoja de estilos para imagenes del carrusel -->
-    <link rel="stylesheet" href="./css/imagenesCarrusel.css">
+    <!-- hoja de estilos para el formulario-->
+    <link rel="stylesheet" href="./css/formulario.css">
+
 
 
     <link rel="stylesheet" href="./css/footer.css">
@@ -25,48 +25,331 @@
   <iframe class="barraNavegacion" src="barraNavegacion.html"></iframe>
 -->
 
- 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-              <img class="icono" src="imagenes\icono.png">
-          </a>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="icono" src="imagenes\icono.png">
+        <strong>Panaderia Doña Carmelita</strong>
+      </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#productos">Nuestros productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="formulario.html">
-                  <button class="btn btn-primary">Realizar Pedido</button>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
-   
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productos.html">Nuestros productos</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">
+              <button class="btn btn-outline-success" >hacer Pedido!</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
 
+
+
+
+
+
+
+
+
+<div class="container">
+  <main>
+    <div class="py-5 text-center" id="iconoFormulario">
+      
+      <img class="d-block mx-auto mb-4" id="imgRepartidor" src="imagenes/repartidor-moto.png" alt="" width="100" >
+      <h2>Formulario Pedido</h2>
+      <p class="lead">ingrese sus datos para realizar su pedido</p>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="row">
+
+      <!-- lista de productos  -->
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Lista de Productos Pedidos</span>
+          <span class="badge bg-primary rounded-pill">3</span>
+        </h4>
+
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Halluya</h6>
+              <small class="text-muted">10 kg</small>
+            </div>
+            <span class="text-muted">$15.000</span>
+          </li>
+
+
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">marraquetas</h6>
+              <small class="text-muted">10 kg</small>
+            </div>
+            <span class="text-muted">$15.000</span>
+          </li>
+
+
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Pan rústico</h6>
+              <small class="text-muted">10 kg</small>
+            </div>
+            <span class="text-muted">$25.000</span>
+          </li>
+
+
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total</span>
+            <strong>$55.000</strong>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+      <!-- Formulario datos -->
+      <div class="col-md-7 col-lg-8" style="border-radius:1%;box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)">
+        <h4 class="mb-3">Dirección de Envio</h4>
+        <form class="needs-validation" novalidate >
+          
+          
+          
+          <div class="row g-3" >
+            <div class="col-sm-6" >
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+
+            <div class="col-12">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                ingrese un correo Electrónico valido
+              </div>
+            </div>
   
 
+            <div class="col-12">
+              <label for="address" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" placeholder="" required>
+              <div class="invalid-feedback">
+                ingrese una direccion
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Optional)</span></label>
+              <input type="text" class="form-control" id="direccion2" placeholder="">
+            </div>
+
+            <div class="col-md-5">
+              <label for="region" class="form-label">region </label>
+              <select class="form-select" id="region" required>
+                <option value="">region</option>
+                <option value="region1"> region 1</option>
+                <option value="region2"> region 2</option>
+                <option value="region3"> region 3</option>
+                <option></option>
+              </select>
+              <div class="invalid-feedback">
+                ingrese una region
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <label for="comuna" class="form-label">comuna</label>
+              <select class="form-select" id="comuna" required>
+                <option value=""></option>
+                <option value="comuna1"> Comuna 1</option>
+                <option value="comuna2"> Comuna 2</option>
+                <option value="comuna3"> Comuna 3</option>
+              </select>
+              <div class="invalid-feedback">
+                ingrese una comuna
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <label for="fechaDespacho" class="form-label">Fecha de Despacho</label>
+              <input type="date" class="form-control" id="fechaDespacho">
+            </div>
+
+
+
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="misma-direccion">
+            <label class="form-check-label" for="misma-direccion">La dirección de envío es la misma que mi dirección de facturación</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="guardar-infoDireccion">
+            <label class="form-check-label" for="guardar-infoDireccion">Guarda esta información para la próxima vez</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Pago</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              
+              <input id="credito" name="metodoDePago" value="credito" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Targeta de Credito</label>
+            </div>
+            <div class="form-check">
+              <input id="debito" name="metodoDePago" value="debito" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Targeta de Debito</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="metodoDePago" value="paypal" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Número de tarjeta</label>
+              <input type="text" class="form-control" id="numeroTargeta"  placeholder="" required>
+              <small class="text-muted">sdffsfs</small>
+              <div class="invalid-feedback">
+                Se requiere el nombre en la tarjeta
+              </div>
+            </div>
+
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Fecha de expiración</label>
+             
+              <input type="text" class="form-control" id="fechaExpiracion" placeholder="MM/AA" required="true">
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="password" class="form-control" id="cvv" placeholder="..." maxlength="3" required/>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          
+        </form>
+        <button class="w-100 btn btn-primary btn-lg" type="submit" onclick="pedido()">hacer pedido</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<hr class="featurette-divider">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+   
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow MDB on social media</p>
+      <a href="" class="btn btn-primary m-1" role="button"
+        rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>  
+
+
+
+
+
+
+
+
+<!-- pie de pagina-->
 
 
 
        
 
 
-        
+    <script src="./js/formularioPedido.js"></script>
     
     <!-- Optional JavaScript; choose one of the two! -->
 

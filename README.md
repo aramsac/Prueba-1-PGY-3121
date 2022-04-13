@@ -1,5 +1,5 @@
 # Prueba-1-PGY-3121
-
+nombre: Arnoldo Ramos
 ***
 ## comandos git usados
 - git checkout -b version1.2  (crea nueva rama y mueve hacia ella)

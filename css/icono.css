@@ -1,17 +1,33 @@
-html,body{
-    margin: 0%;
-    height: 100%;
-    background-color: rgb(240, 240, 240);
-}
+
 .icono{
-    margin-left: 60%;
+    margin-left: 0%;
     width: 80px;
+    animation: myfirst 1s;
+    animation-delay: 10s;
+    position:relative;
+    align-items: center;
    }
 
 .nombreNegocio{
     top: 10%;
     left: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
 }
+
+@keyframes myfirst {
+   
+     0%   { padding:10px;}
+   
+    30%  { padding: 0px;}
+    
+   
+    60%  { padding:10px;}
+   
+    80%  { padding:0px;}
+
+}
+
 @media screen and (max-width:600px){
     .icono{
         margin-left: 0%;

@@ -1,0 +1,15 @@
+#iconoFormulario{
+    margin-top: 100px;
+}
+#imgRepartidor{
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   { transform: rotate(-10deg); left:-100px;  }
+    50%  { transform: rotate( 0deg )}
+    100% { transform: rotate( 0deg ); left: 100px;  }
+  }

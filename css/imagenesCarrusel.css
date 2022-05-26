@@ -1,56 +1,5 @@
-html,body{
-    margin: 0%;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-img{
-    max-height:600px;   
+#myCarousel img{
     width: 100%;
-    object-fit:cover;
-   }
-.img_active{
-    width: 100%;
-}
-
-
-.titulo{
-    color: rgb(104, 101, 143);
-    position: absolute;
-    top: -350px;
-    left: 110px;
-    font-size: 70px;
-}
-
-
-.texto {
-    width: 50%;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    position: absolute;
-    top: -50px;
-    left: 25%;
-}
-
-
-@media screen and (max-width:600px){
-    .img_active{
-        width: 100%;
-        height: 500px;
-        object-fit:cover;
-    }
-    .imagenCarrusel{
-        width: 100%;
-        height:500px;
-        object-fit:cover;
-    }
-    .titulo{
-        color: rgb(104, 101, 143);
-        position: absolute;
-    }
-    #t{
-        position: relative;
-        background-color: aqua;
-        height:1000px;
-    }
+    height: 600px;
+    object-fit: cover;
 }
